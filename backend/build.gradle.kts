@@ -19,8 +19,34 @@ repositories {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter")
+    // Web
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-websocket")
+
+    // Persistence
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("com.microsoft.sqlserver:mssql-jdbc")
+    implementation("org.flywaydb:flyway-core")
+    implementation("org.flywaydb:flyway-database-sqlserver")
+
+    // Security
+    implementation("org.springframework.boot:spring-boot-starter-security")
+
+    // Cache / Messaging
+    implementation("org.springframework.boot:spring-boot-starter-data-redis")
+
+    // Observability
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
+
+    // Utilities
+    implementation("org.mapstruct:mapstruct:1.6.3")
+    compileOnly("org.projectlombok:lombok")
+    annotationProcessor("org.projectlombok:lombok")
+    annotationProcessor("org.mapstruct:mapstruct-processor:1.6.3")
+
+    // Test
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("org.springframework.security:spring-security-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
