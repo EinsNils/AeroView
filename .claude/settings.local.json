@@ -18,7 +18,11 @@
       "PowerShell(Get-ChildItem \"P:\\\\AeroView\\\\.github\" -Recurse -Force | Where-Object { $_.Extension -eq \".yml\" -or $_.Extension -eq \".yaml\" })",
       "PowerShell([System.IO.File]::ReadAllBytes\\(\"P:\\\\AeroView\\\\.github\\\\pull_request_template.md\"\\) | Measure-Object -AsArray | Select-Object @{Name=\"ByteCount\"; Expression={$_.Count}})",
       "PowerShell(Get-Content *)",
-      "Bash(gradlew.bat build *)"
+      "Bash(gradlew.bat build *)",
+      "Bash(./gradlew build *)",
+      "Bash(./gradlew dependencyInsight --dependency flyway-core --configuration compileClasspath)",
+      "Bash(node -e \"const e=require\\('./node_modules/@angular/core/package.json'\\); console.log\\(e.engines||'no engines'\\)\")",
+      "Bash(python3 -c \"import sys,json; p=json.load\\(sys.stdin\\); print\\('Node engines:', p.get\\('engines',{}\\)\\)\")"
     ]
   }
 }
