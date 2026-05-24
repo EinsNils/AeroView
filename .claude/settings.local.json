@@ -28,7 +28,12 @@
       "Bash(npm run *)",
       "Bash(npm test *)",
       "Bash(docker run *)",
-      "PowerShell(docker run *)"
+      "PowerShell(docker run *)",
+      "Bash(gh pr *)"
     ]
+  },
+  "enabledPlugins": {
+    "context7@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true
   }
 }
