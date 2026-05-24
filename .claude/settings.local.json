@@ -26,7 +26,9 @@
       "PowerShell(Get-ChildItem -Path \"P:\\\\AeroView\" -Force | Select-Object -Property Name, @{Name=\"Type\";Expression={if\\($_.PSIsContainer\\){\"Directory\"}else{\"File\"}}} | Format-Table -AutoSize)",
       "PowerShell(Get-ChildItem -Path \"P:\\\\AeroView\\\\.github\" -Recurse -Force | ForEach-Object { $_.FullName.Replace\\(\"P:\\\\AeroView\\\\.github\\\\\", \".github\\\\\"\\) })",
       "Bash(npm run *)",
-      "Bash(npm test *)"
+      "Bash(npm test *)",
+      "Bash(docker run *)",
+      "PowerShell(docker run *)"
     ]
   }
 }
