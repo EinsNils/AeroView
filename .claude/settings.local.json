@@ -8,7 +8,16 @@
       "Bash(Get-ChildItem -Path \"P:\\\\AeroView\\\\frontend\" -Recurse -Name)",
       "Bash(Sort-Object)",
       "PowerShell(Test-Path *)",
-      "PowerShell(Test-Path \"P:\\\\AeroView\\\\frontend\\\\src\\\\environments\" | ForEach-Object { if \\($_\\) { Get-ChildItem \"P:\\\\AeroView\\\\frontend\\\\src\\\\environments\" | Select-Object -ExpandProperty Name } else { \"environments folder does not exist\" } })"
+      "PowerShell(Test-Path \"P:\\\\AeroView\\\\frontend\\\\src\\\\environments\" | ForEach-Object { if \\($_\\) { Get-ChildItem \"P:\\\\AeroView\\\\frontend\\\\src\\\\environments\" | Select-Object -ExpandProperty Name } else { \"environments folder does not exist\" } })",
+      "Bash(node -e \"console.log\\(require\\('./node_modules/@angular/material/package.json'\\).version\\)\")",
+      "Bash(npx ng *)",
+      "Bash(npm install *)",
+      "PowerShell(Get-Item *)",
+      "PowerShell(Get-ChildItem -Path \"P:\\\\AeroView\" -Force | Select-Object Name, @{Name=\"Type\"; Expression={if\\($_.PSIsContainer\\){\"Folder\"}else{\"File\"}}})",
+      "PowerShell(Get-ChildItem \"P:\\\\AeroView\\\\.github\" -Recurse -Force | Format-Table FullName, @{Name=\"Type\"; Expression={if\\($_.PSIsContainer\\){\"Folder\"}else{\"File\"}}})",
+      "PowerShell(Get-ChildItem \"P:\\\\AeroView\\\\.github\" -Recurse -Force | Where-Object { $_.Extension -eq \".yml\" -or $_.Extension -eq \".yaml\" })",
+      "PowerShell([System.IO.File]::ReadAllBytes\\(\"P:\\\\AeroView\\\\.github\\\\pull_request_template.md\"\\) | Measure-Object -AsArray | Select-Object @{Name=\"ByteCount\"; Expression={$_.Count}})",
+      "PowerShell(Get-Content *)"
     ]
   }
 }
