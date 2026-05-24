@@ -1,0 +1,35 @@
+@if (visible()) {
+  <div class="overlay" [@fadeOut]="overlayState()">
+    <div class="card">
+      <div class="brand">
+        <span class="brand-icon">✈</span>
+        <h1>AeroView</h1>
+        <p class="subtitle">Initializing...</p>
+      </div>
+
+      <ul class="steps">
+        @for (step of steps(); track step.id) {
+          <li class="step" [class]="step.status">
+            <span class="step-indicator">
+              @switch (step.status) {
+                @case ('pending') {
+                  <span class="dot"></span>
+                }
+                @case ('loading') {
+                  <span class="spinner"></span>
+                }
+                @case ('success') {
+                  <span class="icon">✓</span>
+                }
+                @case ('error') {
+                  <span class="icon error">✗</span>
+                }
+              }
+            </span>
+            <span class="step-label">{{ step.label }}</span>
+          </li>
+        }
+      </ul>
+    </div>
+  </div>
+}

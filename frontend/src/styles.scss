@@ -20,5 +20,15 @@ html {
 
 body {
   margin: 0;
-  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  font-family: Montserrat, Arial, sans-serif;
+}
+
+.leaflet-control-attribution {
+  background: transparent !important;
+  box-shadow: none !important;
+  color: oklch(45% 0.01 240) !important;
+
+  a {
+    color: oklch(45% 0.01 240) !important;
+  }
 }

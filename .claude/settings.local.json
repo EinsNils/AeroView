@@ -29,7 +29,14 @@
       "Bash(npm test *)",
       "Bash(docker run *)",
       "PowerShell(docker run *)",
-      "Bash(gh pr *)"
+      "Bash(gh pr *)",
+      "Bash(Get-Content *)",
+      "Bash(Get-ChildItem -Recurse \"P:\\\\AeroView\\\\frontend\\\\src\" -Name)",
+      "Bash(Select-Object -First 50)",
+      "WebFetch(domain:github.com)",
+      "Bash(Get-ChildItem -Path \"P:\\\\AeroView\\\\frontend\\\\src\\\\app\" -Recurse)",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "Bash(npm start *)"
     ]
   },
   "enabledPlugins": {
