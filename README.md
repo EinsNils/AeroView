@@ -17,6 +17,9 @@ AeroView ist eine webbasierte Anwendung zur Echtzeit-Verfolgung von Flugbewegung
 
 AeroView richtet sich an alle, die fasziniert vom Luftverkehr sind. Ob man den Flug eines Freundes verfolgen, einen bestimmten Airport im Blick behalten oder einfach zusehen möchte wie sich tausende Flugzeuge gleichzeitig durch den Himmel bewegen — AeroView macht das möglich, direkt im Browser, ohne Installation.
 
+<img width="2536" height="1271" alt="image" src="https://github.com/user-attachments/assets/d392659c-2bfa-4eca-8b3b-5d46fe9d3d39" />
+
+
 ---
 
 ## Was kann AeroView?
@@ -38,18 +41,6 @@ Nach einer kostenlosen Registrierung können Flüge als Favoriten gespeichert un
 ## Wer steckt dahinter?
 
 AeroView ist ein privates Hobby-Projekt, entstanden aus der Begeisterung für Luftfahrt und modernen Web-Technologien. Es ist kein kommerzielles Produkt — keine Werbung, keine versteckten Kosten.
-
----
-
-## Status
-
-🚧 **In aktiver Entwicklung** — das Projekt befindet sich aktuell im Aufbau.
-
-| Phase | Inhalt | Status |
-|---|---|---|
-| Phase 1 | Karte, Live-Daten, Anmeldung | 🔄 In Arbeit |
-| Phase 2 | Flug-Details, Airport-Dashboard | ⏳ Geplant |
-| Phase 3 | Favoriten, Alerts, Statistiken | ⏳ Geplant |
 
 ---
 
