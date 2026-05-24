@@ -27,7 +27,6 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("com.microsoft.sqlserver:mssql-jdbc")
     implementation("org.flywaydb:flyway-core")
-    implementation("org.flywaydb:flyway-database-sqlserver")
 
     // Security
     implementation("org.springframework.boot:spring-boot-starter-security")
