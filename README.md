@@ -2,6 +2,7 @@
 
 > *Every flight. Live. Everywhere.*
 
+![CI](https://github.com/EinsNils/AeroView/actions/workflows/ci.yml/badge.svg)
 ![Deployment](https://img.shields.io/github/deployments/EinsNils/AeroView/production?label=deployment&style=flat-square)
 ![Release](https://img.shields.io/github/v/release/EinsNils/AeroView?style=flat-square&label=release&color=185FA5)
 ![Issues](https://img.shields.io/github/issues/EinsNils/AeroView?style=flat-square&color=854F0B)
