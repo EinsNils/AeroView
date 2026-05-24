@@ -17,7 +17,8 @@
       "PowerShell(Get-ChildItem \"P:\\\\AeroView\\\\.github\" -Recurse -Force | Format-Table FullName, @{Name=\"Type\"; Expression={if\\($_.PSIsContainer\\){\"Folder\"}else{\"File\"}}})",
       "PowerShell(Get-ChildItem \"P:\\\\AeroView\\\\.github\" -Recurse -Force | Where-Object { $_.Extension -eq \".yml\" -or $_.Extension -eq \".yaml\" })",
       "PowerShell([System.IO.File]::ReadAllBytes\\(\"P:\\\\AeroView\\\\.github\\\\pull_request_template.md\"\\) | Measure-Object -AsArray | Select-Object @{Name=\"ByteCount\"; Expression={$_.Count}})",
-      "PowerShell(Get-Content *)"
+      "PowerShell(Get-Content *)",
+      "Bash(gradlew.bat build *)"
     ]
   }
 }
