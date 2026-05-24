@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"P:\\\\AeroView\" -Force)",
+      "Bash(Select-Object Name, PSIsContainer)",
+      "Bash(Format-Table -AutoSize)",
+      "Bash(gh issue *)",
+      "Bash(Get-ChildItem -Path \"P:\\\\AeroView\\\\frontend\" -Recurse -Name)",
+      "Bash(Sort-Object)",
+      "PowerShell(Test-Path *)",
+      "PowerShell(Test-Path \"P:\\\\AeroView\\\\frontend\\\\src\\\\environments\" | ForEach-Object { if \\($_\\) { Get-ChildItem \"P:\\\\AeroView\\\\frontend\\\\src\\\\environments\" | Select-Object -ExpandProperty Name } else { \"environments folder does not exist\" } })"
+    ]
+  }
+}
